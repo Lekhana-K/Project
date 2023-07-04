@@ -21,5 +21,7 @@ insert into mec.students value
 (7,"vani",30,"BME","MCE","Salem"),
 (8,"vini",39,"BME","MCE","pondi"),
 (9,"varshi",40,"BME","MCE","chennai"),
-(10,"preethi",45,"BME","MCE","Attur");
+(10,"preethi",45,"BME","MCE","Attur")
+(1,"lekhana",10,"lekhana","lekhana","lekhana");
+--display table--
 select * from mec.students
