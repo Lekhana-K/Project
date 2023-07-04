@@ -1,5 +1,6 @@
 use mec;
 show tables;
+--create table--
 create table mec.students(
 seialno int,
 name varchar(20),
@@ -9,6 +10,7 @@ college varchar(50),
 place varchar(30));
 select * from mec.students;
 use sys;
+--insert values to the table--
 insert into mec.students value
 (1,"lekhana",10,"BME","MEC","rasipuram"),
 (2,"Anitha",20,"BME","MEC","rasipuram"),
