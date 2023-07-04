@@ -1,11 +1,13 @@
 --create database--
 create database University;
+
 --create table--
 create table University.Students(
 student_id int primary key,
 student_name VARCHAR(50),
 student_age int,
 student_major VARCHAR(50));
+
 --insert values into tables--
 insert into University.Students values
 (01,"lekha","20","Biology"),
@@ -13,8 +15,18 @@ insert into University.Students values
 (03,"anitha","21","History"),
 (04,"vino","18","Computer Science"),
 (05,"saranya","19","Commerce");
+
+--display the values--
 select*from University.Students;
+
+--retrieve students majoring in cs--
 select*from University.Students where student_major="Computer Science";
+
+--retrieve students above 22--
 select*from University.Students where student_age>22;
+
+--update major using id--
+update University.Students set student_major="Computer science";
+
 --delete wanted id--
 delete from University.Student where student_id=05;
