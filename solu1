@@ -1,9 +1,12 @@
+--create database--
 create database University;
+--create table--
 create table University.Students(
 student_id int primary key,
 student_name VARCHAR(50),
 student_age int,
 student_major VARCHAR(50));
+--insert values into tables--
 insert into University.Students values
 (01,"lekha","20","Biology"),
 (02,"avanthi","23","Arts"),
@@ -13,4 +16,5 @@ insert into University.Students values
 select*from University.Students;
 select*from University.Students where student_major="Computer Science";
 select*from University.Students where student_age>22;
+--delete wanted id--
 delete from University.Student where student_id=05;
